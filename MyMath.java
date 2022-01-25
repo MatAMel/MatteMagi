@@ -1,4 +1,4 @@
-package MatteMagi;
+package myApp;
 
 class MyMath {
     //Gets random number

@@ -1,12 +1,11 @@
-package MatteMagi;
+package myApp;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 import static javax.swing.JOptionPane.showMessageDialog;
 
 
@@ -20,7 +19,7 @@ public class GUI extends JPanel {
     static boolean[] selectedOperations = {true, true, true, false};
 
     //Create ranNums object
-    static MyMath ranNums = new MyMath();
+    static myApp.MyMath ranNums = new MyMath();
 
     //Timers
     static long before = 0;
@@ -190,7 +189,7 @@ public class GUI extends JPanel {
                 } catch (Exception f) {
                     showMessageDialog(null, "Invalid Answer");
                 }
-                System.out.println(Arrays.toString(selectedOperations));;
+                
                 //Cleans inputfield of input
                 inputField.setText("");
                 //Updates time and number of excercises done
@@ -224,7 +223,7 @@ public class GUI extends JPanel {
         frame.getContentPane().add (new GUI());
         frame.pack();
         frame.setVisible (true);
-        frame.setIconImage(ImageIO.read(new File("icon.jpg")));
+        frame.setIconImage(ImageIO.read(new File("C:/Users/Mathias/Pictures/icon.jpg")));
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
 
